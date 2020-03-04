@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import home from '@/views/home'// 用一种切换方式替换原有方式
+import login from '@/views/login'
 Vue.use(VueRouter)
 
 const routes = [
@@ -11,8 +12,13 @@ const routes = [
   },
   {
     path: '/home',
-    name: 'home',
+    // name: 'home',
     component: home
+  },
+  {
+    path: '/login',
+    name: 'login', // login的那么
+    component: login
   }
   // {
   //   path: '/about',
