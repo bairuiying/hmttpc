@@ -41,7 +41,36 @@ export default {
         checked: false
       },
       // 定义表单验证规则
-      loginRules: {}
+      loginRules: {
+        mobile: [
+          { required: true, message: '您的手机号不能为空' },
+          {
+            pattern: /^1[3-9]\d{9}$/,
+            message: '您的手机号格式不正确'
+          }
+        ],
+        code: [
+          { required: true, message: '您的验证码不能为空' },
+          {
+            pattern: /^\d{6}$/,
+            message: '验证码应该是六位数字'
+          }
+        ],
+        checked: [
+          {
+            validator: function (rule, value, callback) {
+              // rule: 是当前的校验规则
+              // value是当前的要校验的字段的值
+              // callback是一个回调函数 不论执行成功或者失败都要执行
+              // 成功执行callback 失败执行callback里的（new error）
+              // 如果error为true则表示成功
+              value
+                ? callback()
+                : callback(new Error('您必须同意我们的霸王条款'))
+            }
+          }
+        ]
+      }
     }
   }
 }
