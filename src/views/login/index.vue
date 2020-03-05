@@ -6,8 +6,8 @@
       <div class="title">
         <img src="../../assets/img/logo_index.png" alt />
       </div>
-      <!-- 表单 需要绑定model属性 绑定-->
-      <el-form :model="loginForm" :rules="loginRules" style="margin-top:20px">
+      <!-- 表单 需要绑定model属性 绑定rules属性（表单规则验证） ref给el-form一个属性-->
+      <el-form ref="loginForm" :model="loginForm" :rules="loginRules" style="margin-top:20px">
         <!-- 这是我的表单容器 -->
         <!-- prop 表示要绑定的字段名 -->
         <el-form-item prop="mobile">
@@ -23,7 +23,7 @@
           <el-checkbox v-model="loginForm.checked">我同意协议</el-checkbox>
         </el-form-item>
         <el-form-item>
-          <el-button style="width:100%" type="primary">登陆</el-button>
+          <el-button @click="login" style="width:100%" type="primary">登陆</el-button>
         </el-form-item>
       </el-form>
     </el-card>
@@ -40,6 +40,7 @@ export default {
         code: '', // 验证码
         checked: false
       },
+
       // 定义表单验证规则
       loginRules: {
         mobile: [
@@ -71,6 +72,14 @@ export default {
           }
         ]
       }
+    }
+  },
+  methods: {
+    login () {
+      // this.$refs.loginForm获取的额是el-form的实例对象
+      this.$refs.loginForm.validate().then(() => {
+        alert('cg')
+      })
     }
   }
 }
