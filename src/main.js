@@ -3,10 +3,12 @@ import App from './App.vue'
 import router from './router'
 import ElementUi from 'element-ui'// 引入模块
 import axios from 'axios'
+import Components from '@/components/index.js'// 注册开发的自定义组件
 import 'element-ui/lib/theme-chalk/index.css'// 引入样式
 import '@/styles/index.less'
 
 Vue.config.productionTip = false
+Vue.use(Components)
 Vue.use(ElementUi)// 全局注册element-ui框架 一旦全局注册 所有的位置都可以使用组件
 // Vue.use实际上 会调用Element对象里的一个方法 install方法 并传入Vue对象
 axios.defaults.baseURL = 'http://ttapi.research.itcast.cn/mp/v1_0'// 配置公共请求头地址

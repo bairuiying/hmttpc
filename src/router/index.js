@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import home from '@/views/home'// 用一种切换方式替换原有方式
 import login from '@/views/login'
 Vue.use(VueRouter)
-
+// 挂载路由
 const routes = [
   {
     path: '/',
