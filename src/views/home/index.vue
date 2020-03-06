@@ -8,7 +8,7 @@
     <el-container>
       <!-- 头部导航栏 -->
       <el-header>
-        <h1>头部</h1>
+        <layout-header></layout-header>
       </el-header>
 
       <!-- 身体区 -->
@@ -23,11 +23,13 @@
 
 <script>
 import LayoutAside from '@/components/home/layout-aside'
+import LayoutHeader from '@/components/home/layout-header'
 // @ is an alias to /src
 
 export default {
   components: {
-    'layout-aside': LayoutAside
+    'layout-aside': LayoutAside,
+    'layout-header': LayoutHeader
   }
 }
 </script>
