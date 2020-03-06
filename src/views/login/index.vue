@@ -78,7 +78,22 @@ export default {
     login () {
       // this.$refs.loginForm获取的额是el-form的实例对象
       this.$refs.loginForm.validate().then(() => {
-        alert('cg')
+        this.$axios({
+          url: '/authorizations', // 请求地址
+          data: this.loginForm, // body请求头参数 用于post put patch‘
+          method: 'post'
+          // params: {}, // 指的是url参数 参数会拼接到url地址上面  常常说的get参数
+        })
+          .then(result => {
+            // 把钥匙放在兜里 也就是吧token存于本地缓存
+            window.localStorage.setItem('user-token', result.data.data.token)
+            // 跳转到主页
+            this.$router.push('/home')
+          })
+          .catch(() => {
+            // 提示消息
+            this.$message({ message: '用户名或者密码错误', type: 'error' })
+          })
       })
     }
   }
