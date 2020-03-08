@@ -12,8 +12,8 @@
       </el-header>
 
       <!-- 身体区 -->
-      <el-main>
-        <h1>主要区</h1>
+      <el-main style="padding: 0">
+        <!-- <h1>主要区</h1> -->
         <!-- 这里防止二级路由容器 -->
         <router-view></router-view>
       </el-main>
@@ -21,7 +21,8 @@
   </el-container>
 </template>
 
-<script>// 局部注册
+<script>
+// 局部注册
 // import LayoutAside from '@/components/home/layout-aside'
 // import LayoutHeader from '@/components/home/layout-header'
 // @ is an alias to /src
