@@ -16,7 +16,7 @@ Vue.use(ElementUi)// 全局注册element-ui框架 一旦全局注册 所有的�
 Vue.prototype.$axios = axios// 将axios赋值给Vue对象的原型属性
 new Vue({
   router,
-  ElementUi,
-  axios,
+  // ElementUi,
+  // axios,
   render: h => h(App)
 }).$mount('#app')
