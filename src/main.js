@@ -4,7 +4,7 @@ import router from './router'
 import '@/permission'
 import ElementUi from 'element-ui'// 引入模块
 import axios from '@/utils/request' // 引入封装的request.js的
-import Components from '@/components/index.js'// 注册开发的自定义组件
+import Components from '@/components'// 注册开发的自定义组件
 import 'element-ui/lib/theme-chalk/index.css'// 引入样式
 import '@/styles/index.less'
 

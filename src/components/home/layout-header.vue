@@ -1,5 +1,5 @@
 <template>
-<!-- 头部布局 -->
+  <!-- 头部布局 -->
   <!-- elementUI布局组件 el-row和el-col -->
   <el-row align="middle" type="flex" class="layout-header">
     <el-col class="left" :span="12">
@@ -43,15 +43,17 @@ export default {
     }
   },
   created () {
-    const token = localStorage.getItem('user-token') // 拿本地缓存
-    this.$axios({ // 获取用户的额个人信息
-      url: '/user/profile', // 请求地址
-      headers: {
-        Authorization: `Bearer ${token}`
-      }// 请求头参数header放置请求头参数
+    // const token = localStorage.getItem('user-token') // 拿本地缓存
+    this.$axios({
+      // 获取用户的额个人信息
+      // url: '/user/profile' // 请求地址
+      // headers: {
+      //   Authorization: `Bearer ${token}`
+      // }// 请求头参数header放置请求头参数
+      url: '/user/profile'
     }).then(result => {
       // 如果加载成功我们将数据赋值给userInfo
-      this.userInfo = result.data.data
+      this.userInfo = result.data
     })
   }
 }

@@ -86,7 +86,7 @@ export default {
         })
           .then(result => {
             // 把钥匙放在兜里 也就是吧token存于本地缓存
-            window.localStorage.setItem('user-token', result.data.data.token)
+            window.localStorage.setItem('user-token', result.data.token)
             // 跳转到主页
             this.$router.push('/home')
           })
