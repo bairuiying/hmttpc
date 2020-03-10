@@ -2,7 +2,7 @@
   <!-- el-vontainer是大容器 上下导航栏嵌套在里面 -->
   <el-container>
     <!-- 左侧导航栏 -->
-    <el-aside>
+    <el-aside style="200px;background:#2e2f32">
       <layout-aside></layout-aside>
     </el-aside>
     <el-container>

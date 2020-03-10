@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+// import axios from 'axios'
 // import Home from '../views/Home.vue'
 import Home from '@/views/home'// 用一种切换方式替换原有方式
 import Login from '@/views/login'
