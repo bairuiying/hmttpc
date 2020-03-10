@@ -4,9 +4,18 @@
 
 import axios from 'axios'
 import router from '@/router' // 路由实例对象
+import JSONBig from 'json-bigint'
 // 拦截器及其操作
 axios.defaults.baseURL = 'http://ttapi.research.itcast.cn/mp/v1_0' // 配置公共的请求头地址
+// 对axios的返回数据进行自定义处理 用json-bigint替代原来的json
+// transformResponse 中要返回的结果
+axios.defaults.transformResponse = [function (data) {
+  // 这里主要处理id超过大数字的时候 转化 不正确的问题
 
+  // 用json-bigint的转化来做
+  // 这里需要判断一下 data是不是为空 如果为空就不能转化了
+  return data ? JSONBig.parse(data) : {}
+}]
 axios.interceptors.request.use(function (config) {
   // 成功时执行  第一个 参数 会有一个config  config 就是所有的axios的请求信息
   // 在第一个函数中 需要将配置进行返回  返回的配置 会作为 请求参数进行请求
