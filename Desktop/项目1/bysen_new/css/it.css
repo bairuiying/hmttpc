@@ -1,0 +1,385 @@
+/* 人才 */
+.talents {
+    width: 1200px;
+    height: 625px;
+    margin: auto;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    line-height: 56px;
+    font-family: "fzlantingheis-ul-gbregular";
+    padding-top: 35px;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+}
+
+.min_title {
+    font-size: 28px !important;
+    line-height: 24px;
+    text-align: center;
+    color: #a5a5a5;
+    font-family: 'robotothin';
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 59px;
+}
+
+.talents_content {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 400px;
+    margin-top: 50px;
+}
+
+.talents_item {
+    width: 20%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.talents_item p {
+    line-height: 26px;
+}
+
+.talents_bottom {
+    width: 1200px;
+    margin: auto;
+    height: 100px;
+}
+
+.talents_bottom .more {
+    width: 100%;
+    font-size: 20px;
+    color: #2b63ae;
+    line-height: 100px;
+    text-align: center;
+}
+
+/* 服务流程 */
+.design {
+    width: 1200px !important;
+    margin: auto;
+}
+
+.design h1 {
+    font-size: 36px !important;
+    color: #333 !important;
+}
+
+.design p {
+    color: #999;
+    -webkit-animation: title 0.5s ease 0.2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: title 0.5s ease 0.2s;
+    -moz-animation-fill-mode: forwards;
+    -o-animation: title 0.5s ease 0.2s;
+    -o-animation-fill-mode: forwards;
+    animation: title 0.5s ease 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.color {
+    color: #ffffff;
+}
+
+.desgin_content {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+    min-height: 150px;
+    margin-top: 100px;
+    background: url("bg.png")/*tpa=http://www.ithrf.com/it_person/it/img/bg.png*/ no-repeat center 100px;
+    background-size: 100% 70px;
+}
+
+.desgin_content .desgin_item {
+    flex: 1;
+    text-align: center;
+}
+.desgin_item .item_top{
+    height: 216px;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.desgin_item .item_top img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*文字*/
+.design .desgin_item p{ -webkit-animation: yuanzi 1s; -webkit-animation-fill-mode:forwards; -moz-animation: yuanzi 1s; -moz-animation-fill-mode:forwards; -o-animation: yuanzi 1s; -o-animation-fill-mode:forwards; animation: yuanzi 1s; animation-fill-mode:forwards;}
+@-webkit-keyframes yuanzi /* Safari 和 Chrome */
+{
+    from {filter:alpha(opacity=0); -moz-opacity:0; opacity:0; }
+    to {filter:alpha(opacity=100); -moz-opacity:1; opacity:1; }
+}
+@-moz-keyframes yuanzi /* Safari 和 Chrome */
+{
+    from {filter:alpha(opacity=0); -moz-opacity:0; opacity:0; }
+    to {filter:alpha(opacity=100); -moz-opacity:1; opacity:1; }
+}
+@-o-keyframes yuanzi /* Safari 和 Chrome */
+{
+    from {filter:alpha(opacity=0); -moz-opacity:0; opacity:0; }
+    to {filter:alpha(opacity=100); -moz-opacity:1; opacity:1; }
+}
+@keyframes yuanzi /* Safari 和 Chrome */
+{
+    from {filter:alpha(opacity=0); -moz-opacity:0; opacity:0; }
+    to {filter:alpha(opacity=100); -moz-opacity:1; opacity:1; }
+}
+/*标题*/
+.design h1{font-family:"fzlantingheis-ul-gbregular"; -webkit-animation: title 0.5s ease 0.2s; -webkit-animation-fill-mode:forwards; -moz-animation: title 0.5s ease 0.2s; -moz-animation-fill-mode:forwards; -o-animation: title 0.5s ease 0.2s; -o-animation-fill-mode:forwards; animation: title 0.5s ease 0.2s; animation-fill-mode:forwards;}
+.aboutbg h2{font-family:"fzlantingheis-ul-gbregular"; -webkit-animation: title 0.5s ease 0.2s; -webkit-animation-fill-mode:forwards; -moz-animation: title 0.5s ease 0.2s; -moz-animation-fill-mode:forwards; -o-animation: title 0.5s ease 0.2s; -o-animation-fill-mode:forwards; animation: title 0.5s ease 0.2s; animation-fill-mode:forwards;}
+@-webkit-keyframes title /* Safari 和 Chrome */
+{
+    from {filter:alpha(opacity=0); -webkit-opacity:0; opacity:0; }
+    to {filter:alpha(opacity=100); -webkit-opacity:1; opacity:1; }
+}
+@-moz-keyframes title /* Safari 和 Chrome */
+{
+    from {filter:alpha(opacity=0); -moz-opacity:0; opacity:0; }
+    to {filter:alpha(opacity=100); -moz-opacity:1; opacity:1; }
+}
+@-o-keyframes title /* Safari 和 Chrome */
+{
+    from {filter:alpha(opacity=0); -o-opacity:0; opacity:0; }
+    to {filter:alpha(opacity=100); -o-opacity:1; opacity:1; }
+}
+@keyframes title /* Safari 和 Chrome */
+{
+    from {filter:alpha(opacity=0); opacity:0; opacity:0; }
+    to {filter:alpha(opacity=100); opacity:1; opacity:1; }
+}
+/* 线 */
+.design .desgin_item .item_top{ -webkit-animation: line 1s; -webkit-animation-fill-mode:forwards; -moz-animation: line 1s; -moz-animation-fill-mode:forwards; -o-animation: line 1s; -o-animation-fill-mode:forwards; animation: line 1s; animation-fill-mode:forwards;}
+@-webkit-keyframes line /* Safari 和 Chrome */
+{
+    from {filter:alpha(opacity=0); -moz-opacity:0; opacity:0; }
+    to {filter:alpha(opacity=100); -moz-opacity:1; opacity:1; }
+}
+@-moz-keyframes line /* Safari 和 Chrome */
+{
+    from {filter:alpha(opacity=0); -moz-opacity:0; opacity:0; }
+    to {filter:alpha(opacity=100); -moz-opacity:1; opacity:1; }
+}
+@-o-keyframes line /* Safari 和 Chrome */
+{
+    from {filter:alpha(opacity=0); -moz-opacity:0; opacity:0; }
+    to {filter:alpha(opacity=100); -moz-opacity:1; opacity:1; }
+}
+@keyframes line /* Safari 和 Chrome */
+{
+    from {filter:alpha(opacity=0); -moz-opacity:0; opacity:0; }
+    to {filter:alpha(opacity=100); -moz-opacity:1; opacity:1; }
+}
+
+.design .desgin_one p{-webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.design .desgin_one .item_top{-webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+.design .desgin_eight .line{-webkit-animation-delay:0.7s; -moz-animation-delay:0.7s; -o-animation-delay:0.7s; animation-delay:0.7s;}
+
+.design .desgin_two p{-webkit-animation-delay:1.3s; -moz-animation-delay:1.3s; -o-animation-delay:1.3s; animation-delay:1.3s;}
+.design .desgin_two .item_top{-webkit-animation-delay:1.3s; -moz-animation-delay:1.3s; -o-animation-delay:1.3s; animation-delay:1.3s;}
+.design .desgin_eight .line{-webkit-animation-delay:1.3s; -moz-animation-delay:1.3s; -o-animation-delay:1.3s; animation-delay:1.3s;}
+
+.design .desgin_three p{-webkit-animation-delay:1.9s; -moz-animation-delay:1.9s; -o-animation-delay:1.9s; animation-delay:1.9s;}
+.design .desgin_three .item_top{-webkit-animation-delay:1.9s; -moz-animation-delay:1.9s; -o-animation-delay:1.9s; animation-delay:1.9s;}
+.design .desgin_eight .line{-webkit-animation-delay:1.9s; -moz-animation-delay:1.9s; -o-animation-delay:1.9s; animation-delay:1.9s;}
+
+.design .desgin_four p{-webkit-animation-delay:2.5s; -moz-animation-delay:2.5s; -o-animation-delay:2.5s; animation-delay:2.5s;}
+.design .desgin_four .item_top{-webkit-animation-delay:2.5s; -moz-animation-delay:2.5s; -o-animation-delay:2.5s; animation-delay:2.5s;}
+.design .desgin_eight .line{-webkit-animation-delay:2.5s; -moz-animation-delay:2.5s; -o-animation-delay:2.5s; animation-delay:2.5s;}
+
+.design .desgin_five p{-webkit-animation-delay:3.1s; -moz-animation-delay:3.1s; -o-animation-delay:3.1s; animation-delay:3.1s;}
+.design .desgin_five .item_top{-webkit-animation-delay:3.1s; -moz-animation-delay:3.1s; -o-animation-delay:3.1s; animation-delay:3.1s;}
+.design .desgin_eight .line{-webkit-animation-delay:3.1s; -moz-animation-delay:3.1s; -o-animation-delay:3.1s; animation-delay:3.1s;}
+
+.design .desgin_six p{-webkit-animation-delay:3.7s; -moz-animation-delay:3.7s; -o-animation-delay:3.7s; animation-delay:3.7s;}
+.design .desgin_six .item_top{-webkit-animation-delay:3.7s; -moz-animation-delay:3.7s; -o-animation-delay:3.7s; animation-delay:3.7s;}
+.design .desgin_eight .line{-webkit-animation-delay:3.7s; -moz-animation-delay:3.7s; -o-animation-delay:3.7s; animation-delay:3.7s;}
+
+.design .desgin_seven p{-webkit-animation-delay:4.3s; -moz-animation-delay:4.3s; -o-animation-delay:4.3s; animation-delay:4.3s;}
+.design .desgin_seven .item_top{-webkit-animation-delay:4.3s; -moz-animation-delay:4.3s; -o-animation-delay:4.3s; animation-delay:4.3s;}
+.design .desgin_eight .line{-webkit-animation-delay:4.3s; -moz-animation-delay:4.3s; -o-animation-delay:4.3s; animation-delay:4.3s;}
+
+.design .desgin_eight p{-webkit-animation-delay:4.9s; -moz-animation-delay:4.9s; -o-animation-delay:4.9s; animation-delay:4.9s;}
+.design .desgin_eight .item_top{-webkit-animation-delay:4.9s; -moz-animation-delay:4.9s; -o-animation-delay:4.9s; animation-delay:4.9s;}
+.design .desgin_eight .line{-webkit-animation-delay:4.9s; -moz-animation-delay:4.9s; -o-animation-delay:4.9s; animation-delay:4.9s;}
+
+.line{
+    height: 1px;
+    width: 100%;
+    opacity: 0;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+}
+.desgin_item .item_top{
+    opacity: 0;
+}
+.desgin_item p {
+    color: #000;
+    font-size: 18px;
+    opacity: 0;
+}
+
+.desgin_item p span {
+    display: inline-block;
+    margin-top: 10px;
+    line-height: 24px;
+    color: #999;
+    /* opacity: 0; */
+    font-size: 14px;
+}
+
+/* 我们的优势 */
+.advantage {
+    width: 1200px;
+    min-height: 570px;
+    margin: auto;
+}
+
+.advantage h1 {
+    width: 100%;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-family: "fzlantingheis-ul-gbregular";
+}
+
+.advantage p {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+}
+
+.advantage_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -60px;
+}
+
+.advantage_content .advantage_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 385px;
+    width: 290px;
+    box-sizing: border-box;
+    padding: 40px;
+    margin-top: 50px;
+    cursor: pointer;
+    border: 1px solid #efefef;
+}
+
+.item_one .top_img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background: url("talent_inactive.png")/*tpa=http://www.ithrf.com/it_person/it/img/talent_inactive.png*/ no-repeat center center;
+}
+
+.item_two .top_img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background: url("time_inactive.png")/*tpa=http://www.ithrf.com/it_person/it/img/time_inactive.png*/ no-repeat center center;
+}
+
+.item_three .top_img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background: url("service_inactive.png")/*tpa=http://www.ithrf.com/it_person/it/img/service_inactive.png*/ no-repeat center center;
+}
+
+.item_four .top_img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background: url("customer_inactive.png")/*tpa=http://www.ithrf.com/it_person/it/img/customer_inactive.png*/ no-repeat center center;
+}
+
+.advantage_item:hover {
+    box-shadow: 0px 5px 20px #eee;
+    transition: all 1s;
+}
+
+.item_one:hover .top_img {
+    background: url("talent_active.png")/*tpa=http://www.ithrf.com/it_person/it/img/talent_active.png*/ no-repeat center center;
+    transition: all 1s;
+}
+
+.item_two:hover .top_img {
+    background: url("time_active.png")/*tpa=http://www.ithrf.com/it_person/it/img/time_active.png*/ no-repeat center center;
+    transition: all 1s;
+}
+
+.item_three:hover .top_img {
+    background: url("service_active.png")/*tpa=http://www.ithrf.com/it_person/it/img/service_active.png*/ no-repeat center center;
+    transition: all 1s;
+}
+
+.item_four:hover .top_img {
+    background: url("customer_active.png")/*tpa=http://www.ithrf.com/it_person/it/img/customer_active.png*/ no-repeat center center;
+    transition: all 1s;
+}
+
+.advantage_item h3 {
+    font-size: 20px;
+    color: #000;
+    line-height: 80px;
+}
+
+.advantage_item p {
+    text-align: left;
+    color: #adadad;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* 战略客户 */
+.strategy {
+    width: 1200px;
+    height: 895px;
+    margin: auto;
+}
+
+.strategy_top h1 {
+    width: 100%;
+    font-size: 36px !important;
+    line-height: 50px;
+    color: #000;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-family: "fzlantingheis-ul-gbregular";
+}
+
+.strategy_top p {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+}
+
+.strategy_content {
+    width: 1200px;
+    height: 660px;
+    margin-top: -60px;
+}

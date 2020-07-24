@@ -1,0 +1,426 @@
+/* Code tidied up by ScrapBook */
+
+@font-face {
+	font-family: "fzltcxhjw";
+	font-weight: bold;
+	src: url("fzltcxhjw.ttf") , url("fzltcxhjw.woff") ;
+}
+
+@font-face {
+	font-family: "fzlantingheis-ul-gbregular";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../font/fzltcxhjw_0.eot") format("embedded-opentype"), url("../font/fzltcxhjw_0.woff2") format("woff2"), url("../font/fzltcxhjw_0.woff") format("woff"), url("../font/fzltcxhjw_0.ttf") format("truetype"), url("../font/fzltcxhjw_0.svg") format("svg");
+}
+
+@font-face {
+	font-family: "robotothin";
+	font-style: normal;
+	font-weight: normal;
+	src: url("roboto-thin-webfont.eot") format("embedded-opentype"), url("roboto-thin-webfont.woff2") format("woff2"), url("roboto-thin-webfont.woff") format("woff"), url("roboto-thin-webfont.ttf") format("truetype"), url("roboto-thin-webfont.svg") format("svg");
+}
+
+html {}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0px;
+	padding: 0px;
+	outline: medium none;
+	color: rgb(34, 34, 34);
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font: 12px 微软雅黑, tahoma, arial, 宋体;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+fieldset,
+img {
+	border: 0px none;
+}
+
+iframe {
+	display: block;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+	font-style: normal;
+	font-weight: 500;
+}
+
+ol,
+ul {
+	list-style: outside none none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: 500;
+}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(252, 145, 5);
+}
+
+ins,
+a {
+	text-decoration: none;
+}
+
+a {
+	color: rgb(34, 34, 34);
+}
+
+a:hover {
+	color: rgb(252, 145, 5);
+}
+
+.clear {
+	clear: both;
+	height: 0px;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.wrap {
+	width: 100%;
+	position: relative;
+}
+
+
+/* 头部导航 */
+
+#head-pc .opt {
+	display: inline-block;
+	float: right;
+	vertical-align: top;
+	text-align: left;
+}
+
+#head-pc .opt .contact {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	padding: 16px 0 0 46px;
+	/* width: 188px; */
+	line-height: 18px;
+	margin-left: 35px;
+}
+
+.ico-phone {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url("ico-phone.png") no-repeat;
+	position: absolute;
+	left: 0;
+	top: 25px;
+}
+
+
+/* 咨询 */
+
+.pop-service {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	width: 180px;
+	height: 282px;
+	margin-top: -141px;
+	color: #fff !important;
+	text-align: center;
+	font-size: 14px;
+	background: url("pop-service.png") no-repeat;
+}
+
+.pop-service p {
+	color: #fff !important;
+}
+
+.pop-service .logo {
+	height: 100px;
+	margin-bottom: 5px;
+}
+
+.pop-service .logo:after {
+	display: inline-block;
+	content: '';
+	width: 100px;
+	height: 100px;
+	background-image: url("head.png") ;
+	background-size: cover;
+	/* margin-top: 10px; */
+}
+
+.pop-service .tit {
+	margin-bottom: 5px;
+}
+
+.pop-service .phone {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.pop-service .guarantee {
+	margin-bottom: 3px;
+}
+
+.pop-service .delay {
+	margin-bottom: 20px;
+}
+
+.pop-service .qq {
+	/* margin-bottom: 23px; */
+}
+
+.pop-service strong {
+	font-size: 18px;
+}
+
+.wudi {
+	color: #ffcc00 !important;
+	font-size: 18px !important;
+}
+
+.wudi2 {
+	color: #ffcc00 !important;
+	font-size: 20px !important;
+}
+
+.head-wap p {
+	font-size: 15px;
+}
+
+.head-wap img {
+	
+}
+
+#head-pc .main .nav {
+	margin-left: 65px !important;
+}
+.head-wap .phone{
+	position: absolute;
+	 display: block;
+	 background:url("../image/moble_logo_home.png") no-repeat center center / contain;
+	 width: 93px;
+	 height: 50px;
+	 right: 2%;
+	 top: 0;
+}
+/* 底部样式 */
+footer {
+	height: 500px;
+	background-color: #111F28;
+  }
+  
+  .FootWrap {
+	margin: 0 auto;
+	height: 100%;
+  }
+  
+  .FooterContent {
+	width: 1200px;
+	height: 450px;
+	margin: 0 auto;
+	position: relative;
+  }
+  .FooterContent .bottomLogo {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1.15rem;
+  }
+  .FooterContent .bottomLogo>img{
+	display:block;
+	width: 100%;
+	height: 100%;
+  }
+  .FooterContent .addresss {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 2.5rem;
+	height: 0.7rem;
+	margin:0 auto;
+	margin-left: 1.5rem;
+  
+  }
+  .FooterContent .addresss ul{
+	display:block;
+	width:100%;
+  }
+  .FooterContent .addresss ul>li{
+	display: block;
+	width: 100%;
+	color:#F5FAFF;
+	text-align: left;
+	margin-bottom: 24px;
+  }
+  .ContactUs {
+	/* width: 7.66rem; */
+	position: absolute;
+	top: 70px;
+	left: 1100px;
+  }
+  .Ftitle{
+	width: 0.61rem;
+	margin-right: 24px;
+	padding-top: 30px;
+  }
+  .Ftitle>span {
+	display:block;
+	color:#F5FAFF;
+	font-size:0.11rem;
+	width:0.61rem;
+	margin-bottom: 12px;
+	text-align: center;
+  }
+  .Ftitle>span:last-child{
+	border: 1px solid #FFF;
+	border-radius: 0.04rem;
+  }
+  .erweima>img{
+	display: block;
+	width: 120px;
+	height:120px;
+  }
+  .erweima>span {
+	display: block;
+	color: #666;
+	  font-size: 16px;
+	  margin-bottom: 18px;
+  }
+  .CorptyRght {
+	height: 40px;
+	border-top: 1px solid #384751;
+	line-height:40px;
+	font-size:0.1;
+	color:#FFF;
+	text-align: center;
+  }
+  
+  
+  /*公共title区域*/
+  section .title {
+	width: 660px;
+	height: 160px;
+	padding-top: 80px;
+	margin: 0 auto;
+	text-align: center;
+  }
+  
+  section .title>h3 {
+	font-size: 32px;
+  }
+  
+  section .title>i {
+	display: block;
+	height: 3px;
+	background: rgba(17, 31, 40, 1);
+	border-radius: 50%;
+  }
+  
+  section .description {
+	font-size: 16px;
+	height: 32px;
+	line-height: 32px;
+	color: #111F28;
+  }
+  .footer-list-container {
+	width: 230px;
+	position: absolute;
+	top: 100px;
+  }
+  .footer-list-container:nth-of-type(2){
+	  left: 230px;
+  }
+  .footer-list-container:nth-of-type(3){
+	  left: 460px;
+  }
+  .footer-list-container:nth-of-type(4){
+	  left: 690px;
+  }
+  .footer-list-container:nth-of-type(5){
+	  right: 40px;
+  }
+  .footer-title {
+	color: #666;
+	  font-size: 16px;
+	  margin-bottom: 18px;
+  }
+  .footer-list>li{
+	color: #999;
+	font-size: 14px;
+	line-height: 2;
+  }
+  .footer-list>li>a {
+	text-decoration: none;
+	color:#999;
+  }
+  .footer-list>li>a:hover {
+	color:#FFF;
+  }
